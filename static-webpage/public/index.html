@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Info API</title>
+</head>
+<body>
+  <h1>Information de l’API :</h1>
+  <div id="info">Chargement...</div>
+  <script>
+    fetch('http://13.62.18.117/api/info')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('info').textContent = 'Data récupérée : ' + data.name + ' - ' + data.version + ' - ' + data.description;
+      })
+      .catch(() => {
+        document.getElementById('info').textContent = 'Erreur lors de la récupération';
+      });
+  </script>
+</body>
+</html>
