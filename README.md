@@ -1,4 +1,4 @@
-# Express Backend Project
+# Terraform Project
 
 Ce projet fournit une API Express qui expose des informations stockées dans une base de données MySQL hébergée sur AWS RDS.  
 Il est conçu pour être utilisé avec une page web statique qui consomme l’API `/api/info`.
